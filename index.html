@@ -21,8 +21,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
-    <!-- Tailwind CSS CDN -->
+
+    <!-- Tailwin/ Bootstrap CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <!-- CSS personalizado -->
@@ -30,11 +32,21 @@
     <!-- Favicon -->
     <link rel="icon" href="src/image/image_desk/logo-tuzinho-academy---branco.webp" type="image/x-icon">
     <link rel="stylesheet" href="src/files/css/style.css">
+    <style>
+        .bg-style {
+            background-color: #000000;
+            /* bg-gray-900 */
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n' x='0' y='0'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23n)'/%3E%3C/svg%3E");
+            background-repeat: repeat;
+            background-size: 300px 300px;
+            opacity: 1;
+        }
+    </style>
 </head>
 
 <body class="bg-gray-900 text-gray-100">
     <!-- Header with Hero Section -->
-    <header class="relative overflow-hidden">
+    <header class="bg-style relative overflow-hidden">
         <div class="absolute inset-0 bg-black opacity-60 z-0"></div>
         <div class="relative z-10 max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8 text-center">
             <img src="src/image/image_desk/tuzinho-academy-logo.webp" loading="lazy" width="200" height="200"
@@ -45,7 +57,7 @@
                     Academy | Ao vivo</p>
             </div>
             <h1 class="text-4xl font-bold mb-4 leading-tight uppercase">
-                O <span class="text-yellow-500">Futuro</span> Tatuador
+                O <span class="text-yellow-500">Despertar</span> do Tatuador
             </h1>
             <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-8">
                 Realize sua primeira tatuagem com confiança e qualidade, mesmo que nunca tenha tocado numa máquina —
@@ -62,7 +74,7 @@
                 </div>
                 <p id="percentual-1" class="text-xs text-gray-400">0% das vagas reservadas</p>
             </div>
-            <a href="formulario.html">
+            <a href="pagamento.html">
                 <button
                     class="inline-flex items-center justify-center gap-x-3 bg-yellow-500 hover:bg-yellow-400 text-black font-bold uppercase py-4 px-8 rounded-full text-lg md:text-sm transition-all duration-300 transform hover:scale-105 shadow-lg mx-auto">
                     <span class="rounded-full bg-black p-2 flex items-center justify-center">
@@ -75,17 +87,17 @@
     </header>
     <main>
         <section class="bg-yellow-500 mb-5">
-            <div class="container mx-auto text-black py-5 px-4">
-                <p class="py-5 md:py-1 text-center">
+            <div class="container mx-auto text-black py-3 md:py-5 px-4">
+                <h2 class="capitalize font-bold text-xl text-center mt-3">
+                    Tudo o que você vai aprender com o workshop
+                </h2>
+                <p class="py-1 md:py-5 text-center">
                     Você vai aprender os pilares da tatuagem usados pelos maiores tatuadores da história, pra se
                     aprofundar com mais clareza e acelerar de vez sua carreira.
                 </p>
 
-                <h2 class="capitalize font-bold text-xl text-center mt-3">
-                    Tudo o que você vai aprender com o workshop
-                </h2>
             </div>
-            <div class="max-w-screen-lg mx-auto px-4 py-12">
+            <div class="max-w-screen-lg mx-auto px-4 py-8">
                 <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-3">
                     <div class="relative rounded-xl overflow-hidden h-96">
                         <div class="absolute inset-0 bg-cover bg-center brightness-50"
@@ -150,8 +162,8 @@
                 </h2>
             </div>
 
-            <div class="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8">
-                <div class="bonus-card relative rounded-xl overflow-hidden h-96 bg-white shadow-lg">
+            <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="bonus-card relative rounded-xl overflow-hidden h-96 bg-gray-900 shadow-lg">
                     <div class="absolute inset-0 bg-cover bg-center brightness-75"
                         style="background-image: url('src/image/image_desk/Biossegurança.webp');">
                     </div>
@@ -159,7 +171,7 @@
                     <div class="relative z-10 p-6 flex flex-col justify-end h-full">
                         <div class="flex items-center mb-2">
                             <div class="w-10 h-10 rounded-full bg-yellow-500 flex items-center justify-center mr-3">
-                                <i class="fas fa-pencil-ruler text-white"></i>
+                                <i class="fas fa-pencil-ruler text-gray-900"></i>
                             </div>
                             <h3 class="text-xl font-bold text-white">Biossegurança</h3>
                         </div>
@@ -167,28 +179,47 @@
                             esterilização, descarte correto e ambiente limpo.
                         </p>
                         <div class="mt-4">
-                            <span class="text-sm text-gray-300 line-through">R$ 297,00</span>
-                            <span class="ml-2 text-white font-bold">GRÁTIS</span>
+                            <span class="text-sm text-gray-300 line-through">R$ 57,00</span>
+                            <span class="ml-2 text-white font-bold uppercase">Grátis</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="bonus-card relative rounded-xl overflow-hidden h-96 bg-white shadow-lg">
+                <div class="bonus-card relative rounded-xl overflow-hidden h-96 bg-gray-900 shadow-lg">
                     <div class="absolute inset-0 bg-cover bg-center brightness-75"
                         style="background-image: url('src/image/image_desk/Posicionamento-De-Marca.webp');">
                     </div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80"></div>
                     <div class="relative z-10 p-6 flex flex-col justify-end h-full">
                         <div class="flex items-center mb-2">
-                            <div class="w-10 h-10 rounded-full bg-red-500 flex items-center justify-center mr-3">
-                                <i class="fas fa-shield-alt text-white"></i>
+                            <div class="w-10 h-10 rounded-full bg-yellow-500 flex items-center justify-center mr-3">
+                                <i class="fas fa-shield-alt text-gray-900"></i>
                             </div>
                             <h3 class="text-xl font-bold text-white">Posicionamento de Marca</h3>
                         </div>
-                        <p class="text-gray-200 mb-4">Aprenda todos os protocolos de segurança para proteger você e seus
-                            clientes, seguindo as normas internacionais.</p>
+                        <p class="text-gray-200 mb-4">Construção de imagem e autoridade para atrair mais clientes e se
+                            destacar no mercado.</p>
                         <div class="mt-4">
-                            <span class="text-sm text-gray-300 line-through">R$ 497,00</span>
+                            <span class="text-sm text-gray-300 line-through">R$ 89,00</span>
+                            <span class="ml-2 text-white font-bold uppercase">Grátis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bonus-card relative rounded-xl overflow-hidden h-96 bg-gray-900 shadow-lg">
+                    <div class="absolute inset-0 bg-cover bg-center brightness-75"
+                        style="background-image: url('src/image/image_desk/manipulação-imagem.webp');">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80"></div>
+                    <div class="relative z-10 p-6 flex flex-col justify-end h-full">
+                        <div class="flex items-center mb-2">
+                            <div class="w-10 h-10 rounded-full bg-yellow-500 flex items-center justify-center mr-3">
+                                <i class="fa-solid fa-paintbrush text-gray-900"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Manipulação de Imagem</h3>
+                        </div>
+                        <p class="text-gray-200 mb-4">Criação de artes vetorizadas e decalques otimizados para aplicação
+                            precisa em tatuagens.</p>
+                        <div class="mt-4">
+                            <span class="text-sm text-gray-300 line-through">R$ 97,00</span>
                             <span class="ml-2 text-white font-bold uppercase">Grátis</span>
                         </div>
                     </div>
@@ -196,9 +227,9 @@
             </div>
             <div class="mt-12 text-center">
                 <div class="bg-gradient-to-r from-blue-500 to-yellow-500 p-1 rounded-full inline-block pulse-animation">
-                    <a href="formulario.html">
+                    <a href="pagamento.html">
                         <button
-                            class="bg-white text-gray-900 font-bold py-4 px-8 rounded-full text-md  hover:bg-gray-100 transition-all duration-300">
+                            class="bg-white text-gray-900 font-bold py-4 px-6 md:px-8 rounded-full text-md  hover:bg-gray-100 transition-all duration-300">
                             <i class="fas fa-gift mr-2"></i> Reservar meu ingresso Agora!
                         </button>
                     </a>
@@ -207,45 +238,52 @@
                 <div class="mt-6 flex items-center justify-center">
                     <div class="flex items-center">
                         <i class="fas fa-lock text-gray-200 mr-2"></i>
-                        <span class="text-gray-400 text-sm">Compra 100% segura</span>
+                        <span class="text-gray-400 text-xs md:text-sm">Compra 100% segura</span>
                     </div>
                     <div class="mx-4 w-px h-6 bg-gray-300"></div>
                     <div class="flex items-center">
                         <i class="fas fa-shield-alt text-gray-200 mr-2"></i>
-                        <span class="text-gray-400 text-sm">Garantia de 7 dias</span>
+                        <span class="text-gray-400 text-xs md:text-sm">Garantia de 7 dias</span>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="py-16 px-4 bg-[#415E80]">
+        <section class="py-4 px-4 bg-[#415E80]">
             <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl font-bold mb-4 py-5">Quanto você vai gastar para adquirir todo esse conhecimento?
+                <h2 class="text-2xl md:text-3xl font-bold mb-4 py-5">Quanto você vai gastar para adquirir todo esse
+                    conhecimento?
                 </h2>
                 <div class="bg-gray-100  rounded-2xl shadow-lg p-8 max-w-md mx-auto border border-blue-500">
                     <span class="rounded-full bg-[#415E80] uppercase font-bold text-md px-7 py-2">1° edição
                     </span>
 
                     <div class="my-5">
-                        <div class="flex gap-5 items-center mb-5">
+                        <div class="flex gap-5 items-center mb-4">
                             <img src="src/image/image_desk/icon-1.webp" width="30" height="30" alt="">
-                            <p class="fs-20 text-black font-bold">05 de Agosto</p>
+                            <p class="text-md text-black font-bold">07 de Agosto</p>
                         </div>
-                        <div class="flex gap-5 items-center mb-5">
+                        <div class="flex gap-5 items-center mb-4">
                             <img src="src/image/image_desk/icon-2.webp" width="30" height="30" alt="icone de card"
                                 loading="lazy">
-                            <p class="fs-20 text-black font-bold">Experiência ao vivo</p>
+                            <p class="text-md text-black font-bold">Experiência ao vivo</p>
                         </div>
-                        <div class="flex gap-5 items-center mb-5">
+                        <div class="flex gap-5 items-center mb-4">
                             <img src="src/image/image_desk/icon-3.webp" width="30" height="30" alt="icone de card"
                                 loading="lazy">
-                            <p class="fs-20 text-black font-bold">+ 3h de conteúdo</p>
+                            <p class="text-md text-black font-bold">+ 3h de conteúdo</p>
                         </div>
                     </div>
-
-                    <h3 class="text-5xl font-bold text-black my-8">R$0,00</h3>
-                    <a href="formulario.html" class="mx-auto">
+                    <div class="my-8 text-black font-bold flex flex-col items-center">
+                        <div class="text-start w-full max-w-[250px]">
+                            <small class="text-sm block">De</small>
+                            <p class="text-5xl line-through">R$97,00</p>
+                            <small class="text-md block mt-4">Por</small>
+                            <p class="text-7xl">R$0,00</p>
+                        </div>
+                    </div>
+                    <a href="pagamento.html" class="mx-auto">
                         <button
-                            class="inline-flex items-center justify-center gap-x-3 bg-yellow-500 hover:bg-yellow-400 text-black font-bold uppercase py-4 px-8 rounded-full text-md transition-all duration-300 transform hover:scale-105 shadow-lg mx-auto">
+                            class="inline-flex items-center justify-center gap-x-3 bg-yellow-500 hover:bg-yellow-400 text-black font-bold uppercase py-3 px-3 md:px-8 rounded-full text-md transition-all duration-300 transform hover:scale-105 shadow-lg mx-auto">
                             <span class="rounded-full bg-black p-2 flex items-center justify-center">
                                 <i class="fa-solid fa-arrow-right text-yellow-500 hover:text-yellow-500"></i>
                             </span>
@@ -265,8 +303,9 @@
         </section>
         <section class="py-16 px-4 bg-[#415E80]">
             <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl font-bold mb-4 py-5">Domine os Fundamentos da Tatuagem</h2>
-                <div class="text-start p-5">
+                <h2 class="text-3xl font-bold mb-4 py-2">Domine os Fundamentos da
+                    Tatuagem</h2>
+                <div class="text-start p-5 md:p-4">
                     <p>Este evento é uma iniciativa da Tuzinho Academy.</p>
                     <p class="text-start py-5">Nosso propósito é simples: tornar o início na tatuagem mais acessível,
                         direto,
@@ -309,7 +348,7 @@
                 </div>
 
                 <div class=" p-8 max-w-md mx-auto">
-                    <a href="formulario.html">
+                    <a href="pagamento.html">
                         <button
                             class="inline-flex items-center justify-center gap-x-3 bg-gray-100 hover:bg-gray-200 text-black font-bold uppercase py-2 px-8 rounded-full text-md transition-all duration-300 transform hover:scale-105 shadow-lg mx-auto">
                             <span class="rounded-full bg-black p-2 flex items-center justify-center">
@@ -368,7 +407,7 @@
             </div>
 
             <div class="p-8 max-w-md mx-auto flex items-center">
-                <a href="formulario.html" class="mx-auto">
+                <a href="pagamento.html" class="mx-auto">
                     <button
                         class="inline-flex items-center justify-center gap-x-3 bg-gray-900 hover:bg-gray-200 text-gray-100 hover:text-black font-bold uppercase py-2 px-8 rounded-full text-md transition-all duration-300 transform hover:scale-105 shadow-lg mx-auto">
                         <span class="rounded-full bg-gray-700  p-2 flex items-center justify-center">
@@ -388,7 +427,7 @@
                 alt="Certificado do curso" loading="lazy">
 
             <div class="p-8 max-w-md mx-auto flex items-center">
-                <a href="formulario.html" class="mx-auto">
+                <a href="pagamento.html" class="mx-auto">
                     <button
                         class="inline-flex items-center justify-center gap-x-3 bg-gray-900 hover:bg-gray-200 text-gray-100 hover:text-black font-bold uppercase py-2 px-8 rounded-full text-md transition-all duration-300 transform hover:scale-105 shadow-lg mx-auto">
                         <span class="rounded-full bg-gray-700  p-2 flex items-center justify-center">
@@ -401,8 +440,7 @@
         </section>
         <section class="py-16 px-4 bg-[#181818]">
             <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl font-bold text-center mb-12">PERGUNTAS FREQUENTES</h2>
-
+                <h2 class="text-3xl font-bold text-center mb-12 uppercase">Perguntas frequentes</h2>
                 <div class="space-y-4">
                     <div class="border-b border-gray-100 p-6">
                         <button onclick="toggleFAQ(this)" class="flex items-center justify-between w-full text-left">
@@ -480,7 +518,7 @@
     </main>
     <footer class="bg-black mx-auto p-9">
         <div class="bg-black grid md:grid-cols-1 lg:grid-cols-3">
-            <div class="flex items-center justify-center mb-5 md:mb-1">
+            <div class="flex items-center justify-center mb-3">
                 <img src="src/image/image_desk/logo-tuzinho-academy---branco.webp" width="60" height="60"
                     class="hidden md:block" alt="Logo tuzinho academy" loading="lazy">
                 <div class="text-center">
@@ -488,33 +526,81 @@
                     <small class="text-gray-300">Todos os direitos reservados</small>
                 </div>
             </div>
-            <div class="flex items-center justify-center">
-                <div class="grid gap-3 md:gap-0 justify-center items-center grid-cols-2 md:grid-cols-1 mb-5 md:mb-1">
-                    <div class="flex flex-col text-center">
-                        <a href="politicas-de-privacidade.html"
-                            class="capitalize text-gray-300 text-xs md:text-base">Política de privacidade</a>
-                        <a href="termo-rcs.html" class="capitalize text-gray-300 text-xs md:text-base">Termo RCS</a>
-                    </div>
-                    <div class="flex flex-col text-center">
-                        <a href="politicas-de-reembolso.html"
-                            class="capitalize text-gray-300 text-xs md:text-base">Política
-                            de reembolso</a>
-
-                        <a href="termo-de-uso.html" class="capitalize text-gray-300 text-xs md:text-base">Termo de
-                            uso</a>
-
-                    </div>
+            <div class="flex items-center justify-center mb-2">
+                <div class="text-center">
+                    <a href="politicas-de-privacidade.html" class="capitalize text-gray-300 underline text-sm my-4" data-bs-toggle="modal" data-bs-target="#meuModal">Política de privacidade</a>
                 </div>
             </div>
             <div class="flex justify-center items-center">
                 <img src="src/image/image_desk/logo-azul.webp" width="60" height="60" alt="Logo azul" loading="lazy">
                 <p
                     class="capitalize font-heading font-bold text-[#415E80] text-center text-2xl md:text-2xl lg:text-4xl py-5 md:py-0">
-                    Tuzinho academy</p>
+                    Tuzinho academy
+                </p>
+
             </div>
 
         </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="meuModal" tabindex="-1" aria-labelledby="meuModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-[#181818] text-sm">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="meuModalLabel">Política de Privacidade</h5>
+                    <button type="button" class="btn-close bg-gray-500" data-bs-dismiss="modal"
+                        aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-3 ">A sua privacidade é muito importante para nós. Ao se inscrever para participar da
+                        nossa Live
+                        gratuita no YouTube, você concorda com a coleta e uso dos seus dados conforme descrito abaixo.
+                    </p>
+                    <h2 class="font-bold mb-3 capitalize">1. Coleta de dados</h2>
+                    <p class="">Coletamos apenas os dados que você fornecer voluntariamente ao preencher o formulário de
+                        inscrição, como:</p>
+                    <ul class="list-disc pl-5 py-4">
+                        <li>Nome</li>
+                        <li>E-mail</li>
+                        <li>WhatsApp</li>
+                    </ul>
+
+                    <p>Essas informações são utilizadas exclusivamente para:</p>
+                    <ul class="list-disc pl-5 py-4">
+                        <li>Enviar o link de acesso e lembretes da live</li>
+                        <li>Compartilhar conteúdos complementares e materiais gratuitos</li>
+                        <li>Informar sobre oportunidades relacionadas ao tema da live</li>
+                    </ul>
+
+                    <h2 class="font-bold mb-3 capitalize">2. Compartilhamento de dados</h2>
+                    <p class="mb-3">Seus dados não serão vendidos, alugados ou compartilhados com terceiros. Eles são
+                        utilizados apenas pela equipe da Tuzinho Academy para fins informativos e educacionais
+                        relacionados ao evento.</p>
+
+                    <h2 class="font-bold mb-3 capitalize">3. Armazenamento e segurança</h2>
+                    <p class="mb-3">Todos os dados são armazenados de forma segura e confidencial. Aplicamos boas
+                        práticas de segurança para proteger suas informações contra acesso não autorizado, alteração ou
+                        divulgação.</p>
+
+                    <h2 class="font-bold mb-3 capitalize">4. Seus direitos</h2>
+                    <p class="">Você pode solicitar, a qualquer momento:</p>
+                    <ul class="list-disc pl-5 py-4">
+                        <li>Acesso aos seus dados</li>
+                        <li>Correção ou atualização de informações</li>
+                        <li>Exclusão dos seus dados da nossa base</li>
+                    </ul>
+
+                    <p class="text-xs mb-4">Para isso, entre em contato conosco através de nossos canais oficiais</p>
+
+                    <h2 class="font-bold mb-3 capitalize">5. Consentimento</h2>
+                    <p class="mb-3">Ao enviar seus dados, você declara estar ciente e de acordo com esta Política de
+                        Privacidade.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="src/files/js/barra.js"></script>
     <script>
         function toggleFAQ(button) {
@@ -524,4 +610,7 @@
             icon.classList.toggle("rotate-180");
         }
     </script>
+
+    <!-- Bootstrap JS (com Popper.js incluído) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

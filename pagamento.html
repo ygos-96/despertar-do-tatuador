@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O Despertar do Tatuador - Pagamento</title>
+
+  <!-- Preconnects para desempenho -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
+  <!-- Tailwin/ CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Intl Tel Input (bandeiras e validação) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="src/files/css/buid.css">
+  <style>
+    .bg-style {
+      background-color: #050505;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n' x='0' y='0'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 300px 300px;
+      opacity: 1;
+    }
+
+    .iti {
+      width: 100% !important;
+    }
+
+    .iti input {
+      width: 100% !important;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-900 text-gray-100">
+  <div class="min-h-screen grid grid-cols-1 lg:grid-cols-2">
+    <!-- Resumo do Pedido (lado esquerdo - fundo preto) -->
+    <div class="relative bg-style text-white p-8 flex flex-col justify-center">
+      <div class="absolute inset-0 bg-black opacity-60 z-0"></div>
+      <div class="relative flex gap-8 mb-3 md:mb-12 px-5">
+        <a href="index.html"><i class="fa-solid fa-arrow-left text-white text-xl"></i></a>
+        <img src="src/image/image_desk/tuzinho-academy-logo.webp" loading="lazy" width="140" height="100"
+          alt="Logo Tuzinho Academy" />
+      </div>
+      <div class="relative border border-white/40 flex flex-col md:flex-row p-5 z-10">
+        <img src="src/image/image_desk/workshop.png" width="150" height="150" alt="Ilustração de livro do Workshop"
+          class="mx-auto md:mx-0">
+        <div class="mt-1 md:mt-5">
+          <p class="text-2xl capitalize">Despertar do Tatuador + Biossegurança + Posicionamento de marca + Manipulação
+            de imagem</p>
+          <p class="max-w-screen-sm text-sm text-gray-200 opacity-70 mb-4">Tenha acesso a conteúdos exclusivos,
+            aprendizados
+            únicos para se tornar um tatuador de sucesso e viver daquilo que você mais gosta</p>
+          <p class="text-4xl font-bold">R$ 973,00</p>
+        </div>
+      </div>
+      <div class="relative space-y-4 z-10">
+        <h2 class="text-xl font-semibold"></h2>
+        <div class="pt-4 cursor-not-allowed select-none">
+          <div class="flex justify-between">
+            <span class="text-sm">Cupom</span>
+            <span class="line-through ">R$ 973,00</span>
+          </div>
+          <p class="uppercase text-sm opacity-50">Tuzinho100</p>
+        </div>
+
+        <div class="border-t border-white/40 pt-4 text-sm">
+          <div class="flex justify-between">
+            <span class="text-sm">Subtotal</span>
+            <span><strong class="text-red-300">-</strong> R$ 973,00</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-sm">Desconto</span>
+            <span><strong class="text-green-300">+</strong> R$ 973,00</span>
+          </div>
+        </div>
+
+        <div class="border-t border-white/40 pt-4 flex justify-between items-end text-lg font-semibold">
+          <span>Total gasto</span>
+          <span class="text-4xl">R$ 0,00</span>
+        </div>
+      </div>
+    </div>
+    <!-- Formulário de Pagamento (lado direito) -->
+    <div class="bg-gray-200 text-black p-8 flex flex-col justify-center">
+      <form class="w-full max-w-2x1 p-3 md:p-12 space-y-6">
+        <div>
+          <label class="block text-sm font-medium">E-mail</label>
+          <input type="email" placeholder="e-mail@exemplo.com" class="w-full mt-1 p-3 border rounded-md" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Nome Completo</label>
+          <input type="text" placeholder="Nome completo" class="w-full mt-1 p-3 border rounded-md" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Telefone</label>
+          <input type="tel" id="phone" name="phone" placeholder="(99) 9 9999 9999"
+            class="w-full max-w-2x1 mt-1 p-3 border rounded-md" />
+        </div>
+        <p class="text-center text-xs text-gray-400 mt-2">
+          Você receberá todos os detalhes da live por e-mail após o envio.
+        </p>
+        <button type="submit" class="w-full bg-black text-white py-3 rounded-md font-bold hover:bg-gray-800 transition">
+          Comprar
+        </button>
+
+      </form>
+      <div class="text-center">
+        <p class="text-gray-400">Oferta válida apenas para os 1.000 primeiros cadastrados</p>
+        <div class="mt-6 flex items-center justify-center">
+          <div class="flex items-center">
+            <i class="fas fa-lock text-gray-400 mr-2"></i>
+            <span class="text-gray-400 text-xs md:text-sm">Compra 100% segura</span>
+          </div>
+          <div class="mx-4 w-px h-6 bg-gray-300"></div>
+          <div class="flex items-center">
+            <i class="fas fa-shield-alt text-gray-400 mr-2"></i>
+            <span class="text-gray-400 text-xs md:text-sm">Garantia de 7 dias</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- InputMask para máscara -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js"></script>
+  <script>
+    const input = document.querySelector("#phone");
+    const iti = window.intlTelInput(input, {
+      initialCountry: "br",
+      onlyCountries: ["br"],
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
+    });
+
+    $(document).ready(function () {
+      $("#phone").inputmask({
+        mask: "(99) 9 9999 9999",
+        placeholder: "_",
+        showMaskOnHover: false,
+        showMaskOnFocus: true,
+      });
+    });
+  </script>
+
+</body>

@@ -172,7 +172,7 @@
       const telefone = document.querySelector('#phone').value;
 
       try {
-        const response = await fetch("https://testetelway.app.n8n.cloud/webhook/cadastro-workshop", {
+        const response = await fetch("https://n8n.tuzinho.app/webhook-test/cadastro-workshop", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ email, nome, insta, telefone })
